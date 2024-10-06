@@ -1,0 +1,35 @@
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.game-container {
+    width: 90%;
+    margin: 0 auto;
+}
+header {
+    text-align: center;
+    padding: 20px;
+}
+nav button {
+    margin: 5px;
+    padding: 10px;
+}
+.player-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.player-stats {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+footer {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+}

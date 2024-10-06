@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>キャリア復興ゲーム</title>
+    <link rel="stylesheet" href="main/style.css">
+    <script src="main/main.js" defer></script>
+    <script src="job/job.js" defer></script>
+    <script src="action/action.js" defer></script>
+    <script src="place/place.js" defer></script>
+    <script src="uranai/uranai.js" defer></script>
+    <script src="log/log.js" defer></script>
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>キャリア復興ゲーム</h1>
+            <nav>
+                <button onclick="openBag()">アイテム袋</button>
+                <button onclick="showShop()">ショップ</button>
+                <button onclick="showAiRobotManagement()">AIロボ管理所</button>
+                <button onclick="showFacilityRestoration()">施設復興所</button>
+                <button onclick="fortune()">占い所</button>
+            </nav>
+        </header>
+        <main>
+            <div class="player-info">
+                <img src="images/jobs/hukkouya.png" alt="復興家アイコン" id="player-icon" onclick="debugMode()">
+                <div class="player-stats">
+                    所持金: <span id="money">100</span> yen
+                </div>
+            </div>
+            <div class="exploration">
+                <button onclick="exploreArea('A-1エリア')">A-1エリア 探索する</button>
+            </div>
+        </main>
+        <footer>
+            <div id="log-output">ログ出力:</div>
+        </footer>
+    </div>
+</body>
+</html>
