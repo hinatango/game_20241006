@@ -22,6 +22,8 @@
                 <button onclick="showAiRobotManagement()">AIロボ管理所</button>
                 <button onclick="showFacilityRestoration()">施設復興所</button>
                 <button onclick="fortune()">占い所</button>
+                <button onclick="showPokedex()">図鑑</button>
+                <button onclick="showHelp()">説明書（よくある質問）</button>
             </nav>
         </header>
         <main>
@@ -32,7 +34,11 @@
                 </div>
             </div>
             <div class="exploration">
-                <button onclick="exploreArea('A-1エリア')">A-1エリア 探索する</button>
+                <button onclick="exploreArea('A-1エリア')">A-1エリアを探索</button>
+            </div>
+            <div id="item-bag" class="hidden">
+                <h2>アイテム袋</h2>
+                <ul id="item-list"></ul>
             </div>
         </main>
         <footer>

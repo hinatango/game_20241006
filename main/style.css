@@ -26,10 +26,21 @@ nav button {
     font-weight: bold;
     margin-left: 20px;
 }
+.exploration {
+    text-align: center;
+    margin-top: 20px;
+}
 footer {
     text-align: center;
     margin-top: 40px;
     background-color: #e0f7fa;
     padding: 10px;
     border-radius: 5px;
+}
+#item-bag {
+    text-align: center;
+    margin-top: 20px;
+}
+.hidden {
+    display: none;
 }
