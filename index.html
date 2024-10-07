@@ -3,47 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>キャリア復興ゲーム</title>
-    <link rel="stylesheet" href="main/style.css">
-    <script src="main/main.js" defer></script>
-    <script src="job/job.js" defer></script>
-    <script src="action/action.js" defer></script>
-    <script src="place/place.js" defer></script>
-    <script src="uranai/uranai.js" defer></script>
-    <script src="log/log.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>キャリア教育ゲーム</title>
 </head>
 <body>
-    <div class="game-container">
-        <header>
-            <h1>キャリア復興ゲーム</h1>
-            <nav>
-                <button onclick="openBag()">アイテム袋</button>
-                <button onclick="showShop()">ショップ</button>
-                <button onclick="showAiRobotManagement()">AIロボ管理所</button>
-                <button onclick="showFacilityRestoration()">施設復興所</button>
-                <button onclick="fortune()">占い所</button>
-                <button onclick="showPokedex()">図鑑</button>
-                <button onclick="showHelp()">説明書（よくある質問）</button>
-            </nav>
-        </header>
-        <main>
-            <div class="player-info">
-                <img src="images/jobs/hukkouya.png" alt="復興家アイコン" id="player-icon" onclick="debugMode()">
-                <div class="player-stats">
-                    所持金: <span id="money">100</span> yen
-                </div>
-            </div>
-            <div class="exploration">
-                <button onclick="exploreArea('A-1エリア')">A-1エリアを探索</button>
-            </div>
-            <div id="item-bag" class="hidden">
-                <h2>アイテム袋</h2>
-                <ul id="item-list"></ul>
-            </div>
-        </main>
-        <footer>
-            <div id="log-output">ログ出力:</div>
-        </footer>
+    <div id="menu">
+        <button onclick="shop()">ショップ</button>
+        <button onclick="aiRobotManagement()">AIロボ管理所</button>
+        <button onclick="facilityDevelopment()">施設復興所</button>
+        <button onclick="fortune()">占い所</button>
+        <button onclick="pokedex()">図鑑</button>
+        <button onclick="faq()">説明書（よくある質問）</button>
     </div>
+    <div id="main-content">
+        <img id="player-icon" src="images/jobs/hukkouya.png" onclick="debugMode()" alt="プレイヤーアイコン">
+        <div id="player-status">
+            所持金: <span id="money">100</span>yen / 10000yen
+        </div>
+        <div id="items-list">
+            <h3>所持アイテム一覧表</h3>
+            <ul id="item-bag"></ul>
+        </div>
+        <button id="explore-a1" onclick="exploreArea('A-1')">A-1エリアを探索</button>
+    </div>
+    <div id="log-output">
+        <h3>ログ出力</h3>
+        <ul id="log-list"></ul>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/job.js"></script>
+    <script src="js/action.js"></script>
+    <script src="js/place.js"></script>
+    <script src="js/uranai.js"></script>
+    <script src="js/log.js"></script>
 </body>
 </html>

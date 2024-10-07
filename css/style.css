@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+#menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #add8e6;
+    padding: 10px;
+}
+#menu button {
+    flex: 1;
+    margin: 0 5px;
+}
+#main-content {
+    padding: 20px;
+    text-align: center;
+}
+#player-icon {
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+}
+#player-status {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#log-output {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e0f7fa;
+}
